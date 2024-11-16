@@ -38,7 +38,7 @@ const Dashboard = () => {
 
         const fetchCurrentUser = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/user/profile', {
+                const response = await axios.get('https://carifyapp.onrender.com/api/user/profile', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setCurrentUser(response.data.name || 'User');
