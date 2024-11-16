@@ -31,7 +31,7 @@ const CarDetail = () => {
                     return;
                 }
 
-                const response = await axios.get(`http://localhost:5000/api/car/${id}`, {
+                const response = await axios.get(`https://carifyapp.onrender.com/api/car/${id}`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
 
