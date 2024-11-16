@@ -5,6 +5,7 @@ const multer = require('multer');
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const cloudinary = require('../cloudinaryConfig'); 
 
+
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
     params: {
@@ -15,6 +16,13 @@ const storage = new CloudinaryStorage({
 const upload = multer({ storage });
 
 const router = express.Router();
+
+router.post('/', authenticate, upload.array('images', 10), createCar); 
+router.get('/', authenticate, getCars);
+router.get('/:id', getCarById);
+router.put('/:id', authenticate, upload.array('images', 10), updateCar); 
+router.delete('/:id', authenticate, deleteCar);
+
 
 /**
  * @swagger
