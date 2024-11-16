@@ -27,7 +27,7 @@ const Dashboard = () => {
         
         const fetchCars = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/car', {
+                const response = await axios.get('https://carifyapp.onrender.com/api/car', {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setCars(response.data);
