@@ -72,7 +72,7 @@ const CarDetail = () => {
                 }
             });
 
-            await axios.put(`http://localhost:5000/api/car/${id}`, formData, {
+            await axios.put(`https://carifyapp.onrender.com/api/car/${id}`, formData, {
                 headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' },
             });
 
