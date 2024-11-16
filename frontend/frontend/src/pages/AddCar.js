@@ -57,7 +57,7 @@ const AddCar = () => {
 
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/api/car', data, {
+            const response = await axios.post('https://carifyapp.onrender.com/api/car', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     Authorization: `Bearer ${token}`,
