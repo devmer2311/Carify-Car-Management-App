@@ -88,7 +88,7 @@ const CarDetail = () => {
         try {
             const token = localStorage.getItem('token');
             setLoading(true);
-            await axios.delete(`http://localhost:5000/api/car/${id}`, {
+            await axios.delete(`https://carifyapp.onrender.com/api/car/${id}`, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setLoading(false);
