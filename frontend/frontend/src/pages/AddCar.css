@@ -1,0 +1,91 @@
+.addcar-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.addcar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.addcar-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #1d3557;
+}
+
+.back-button {
+    background-color: #457b9d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addcar-form .form-group {
+    margin-bottom: 15px;
+}
+
+.addcar-form label {
+    display: block;
+    font-weight: bold;
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+.addcar-form input,
+.addcar-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.addcar-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.addcar-form .image-preview {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.addcar-form .image-preview img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d3d3d3;
+    border-radius: 6px;
+}
+
+.submit-button {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #457b9d;
+}
+
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #e63946;
+}

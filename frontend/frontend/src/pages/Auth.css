@@ -1,0 +1,122 @@
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./graphic.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.auth-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(2px); 
+    z-index: 1;
+}
+
+
+.auth-card {
+    position: relative;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    background: #ffffff; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.auth-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.auth-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.auth-welcome {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.auth-input-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.auth-input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4e38cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.auth-error {
+    color: #e63946;
+    font-size: 14px;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-footer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.auth-footer span {
+    color: #666;
+}
+
+.auth-toggle-btn {
+    background: none;
+    border: none;
+    color: #4e38cc;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    font-size: 14px;
+}
