@@ -28,7 +28,7 @@ const Login = () => {
         e.preventDefault();
         setError(''); 
         try {
-            const response = await axios.post('http://localhost:5000/api/user/login', formData);
+            const response = await axios.post('https://carifyapp.onrender.com/api/user/login', formData);
 
             
             localStorage.setItem('token', response.data.token);
